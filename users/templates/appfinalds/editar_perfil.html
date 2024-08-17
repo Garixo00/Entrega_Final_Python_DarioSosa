@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDITAR PERFIL</title>
+</head>
+<body>
+    <div class="d-flex justify-content-center">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <table>
+                {{ miformulario.as_table}}
+            </table>
+            <input type="submit" value="Actualizar">
+        </form>
+        <a class="btn btn-primary btn-lg px-2" href="{% url 'cambiar_pass' %}">Cambiar Contraseña</a>
+    </div>
+</body>
+</html> 
